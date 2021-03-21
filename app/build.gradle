@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.application'
 }
+plugins {
+    id "org.sonarqube" version "3.1.1"
+}
 
 android {
     compileSdkVersion 30
@@ -39,4 +42,12 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "ziyao987_PruebaTravis"
+        property "sonar.login",""
+        property "sonar.password",""
+    }
 }
