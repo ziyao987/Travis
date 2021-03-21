@@ -1,0 +1,31 @@
+language: android
+dist: trusty
+android:
+  components:
+    - build-tools-26.0.2
+    - android-26
+    - extra
+    
+before_install:
+    - yes | sdkmanager "platforms;android-28"
+
+jdk:
+  - oraclejdk11
+addons:
+    apt:
+    packages:
+      - oracle-java11-installer
+  sonarcloud:
+    organization: "ziyao987"
+    token:
+      secure: "feHU2Fc1Nd5cOVcWh7Y2KskZB6x3P+0IbpCyqGjmh5sdxPIsFF7ec7rhYE1jtEfrvrjwRFEn+ijfM9aAbw30tJq4X/ICu8Ewtsn6kOzjizorWUg2J0JGtnVbKkmJNBdG6J6gQCc49fubMIwxKcUOB5EFfZjd9r8T7ESyHFFaRp3GmGxVVftOsfGvsvcq3KoCYsrKi
+uj/0Ohj9EasmkE/xYICMMl8C2pCthCw/P3Ne9rsjs7vD6fKdwMrs1SHz4Sxu7o9mCuCFwi7gaR4C/AHrrVGDpkjvRnZ+kka0GJ8R1zixkBVanpC3DZuXwTayG3W/k9N6Fwf3l+N+OTbJa2rCAikbvOaoiSlcsceEOKdJV2s5egM0dBTsORCGIeP9j7ZA3nuX+xbK+cSpYwzhVlzM
+BWUWS46VgKcuq1JKabaUIjDAI26miBjB0YNkX6yYF+b73LEM2UrB0l7xPTYRoUQ4wGdaEcl5JCPjq6J3qkWF06wJG/tGEE5qUgVSBZ8UuAjN27NYqPLpTfPVpY09CJwZmih5Tlo3MRufLGK3fZaeTxzEhe3/KYhMy6OlcDQfFK036kqsWtoS/HvhkZRdwzfD3qzKJY9yRWVr+qi3
+YejvXwvz4rtqKNuAfw3HKCfZG9/V+WFXiZmrX3fRU/JNab6qUuJWqC9CGkzaZsioMr5c4c=" # encrypted value of your token
+
+script:
+  - install-jdk.sh
+  - jdk_switcher use oraclejdk11
+   - export JAVA_HOME=$HOME/openjdk11
+  - $TRAVIS_BUILD_DIR/install-jdk.sh --install openjdk11 --target $JAVA_HOME
+  - ./gradlew sonarqube
