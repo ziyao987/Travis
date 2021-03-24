@@ -6,12 +6,10 @@ android:
     - tools
     - platform-tools
     - build-tools-30.0.2
-    - $ANDROID_TARGET
-    - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
     - extra
-    
- before_install:
-    - yes | sdkmanager "platforms;android-30"
+
+before_install:
+  - yes | sdkmanager "platforms;android-30"
     
 addons:
   sonarcloud:
