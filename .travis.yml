@@ -9,7 +9,6 @@ android:
     - extra
 
 before_install:
-  - export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.xml.bind'
   - yes | sdkmanager "platforms;android-30"
     
 addons:
