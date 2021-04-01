@@ -10,6 +10,7 @@ android:
 
 before_install:
   - chmod +x gradlew
+  - jdk_switcher use openjdk8
   - yes | sdkmanager "platforms;android-30"
     
 addons:
@@ -22,6 +23,7 @@ Q/dYKHIjKCUjL0Doux5LYfaWzHG+Sn081dnL7HntuhIaOvtNolInJnAKnZ2MqttZcDuBfdBIuM+qTlll
 fptHlhjCuy/0dgkXLTsZ/u07AEjuvp7Bz5vcUqzFQqePreqDf9rI7H/PcfqIPb4I=" # encrypted value of your token
 
 jdk: 
+  - openjdk8
   - openjdk11
 
 script:
