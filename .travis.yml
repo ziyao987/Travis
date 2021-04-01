@@ -22,7 +22,7 @@ PAYdvUvT8CPEcfKBRZZIJbUgGTrSWVKbDVabgXe4a2a6H7PHYFvk0qPn7tQUzJlHtvfClA5sirY2pMsT
 Q/dYKHIjKCUjL0Doux5LYfaWzHG+Sn081dnL7HntuhIaOvtNolInJnAKnZ2MqttZcDuBfdBIuM+qTlllFzAZPK4kzTAzkoM4FqCHCf82U7n3S01EG0rn9d4Uo4RYrrABBujCkL57uTYI54D6FDB0bO6ZAbfvnhTO/LM/qapL0Tyvb6jxd9+hKUk7Gp1nG5REdIHc53h5cqet2k3x+i
 fptHlhjCuy/0dgkXLTsZ/u07AEjuvp7Bz5vcUqzFQqePreqDf9rI7H/PcfqIPb4I=" # encrypted value of your token
 
-jdk: openjdk11
+
 
 script:
   - # do stuff with open OpenJDK 11
