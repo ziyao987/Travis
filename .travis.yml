@@ -27,4 +27,4 @@ jdk: openjdk11
 script:
   - jdk_switcher use openjdk11
   - # do stuff with open OpenJDK 11
-  - ./gradlew build sonarqube --info
+  - ./gradlew build sonarqube
