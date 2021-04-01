@@ -22,7 +22,7 @@ Q/dYKHIjKCUjL0Doux5LYfaWzHG+Sn081dnL7HntuhIaOvtNolInJnAKnZ2MqttZcDuBfdBIuM+qTlll
 fptHlhjCuy/0dgkXLTsZ/u07AEjuvp7Bz5vcUqzFQqePreqDf9rI7H/PcfqIPb4I=" # encrypted value of your token
 
 jdk: 
-  openjdk11
+  - openjdk11
 
 script:
   - jdk_switcher use openjdk11
