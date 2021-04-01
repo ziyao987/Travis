@@ -20,10 +20,8 @@ uj/0Ohj9EasmkE/xYICMMl8C2pCthCw/P3Ne9rsjs7vD6fKdwMrs1SHz4Sxu7o9mCuCFwi7gaR4C/AHr
 BWUWS46VgKcuq1JKabaUIjDAI26miBjB0YNkX6yYF+b73LEM2UrB0l7xPTYRoUQ4wGdaEcl5JCPjq6J3qkWF06wJG/tGEE5qUgVSBZ8UuAjN27NYqPLpTfPVpY09CJwZmih5Tlo3MRufLGK3fZaeTxzEhe3/KYhMy6OlcDQfFK036kqsWtoS/HvhkZRdwzfD3qzKJY9yRWVr+qi3
 YejvXwvz4rtqKNuAfw3HKCfZG9/V+WFXiZmrX3fRU/JNab6qUuJWqC9CGkzaZsioMr5c4c=" # encrypted value of your token
 
-jdk:
-  - openjdk11
+
 script:
-  - export JAVA_HOME=$HOME/openjdk11
-  - $TRAVIS_BUILD_DIR/install-jdk.sh --install openjdk11 --target $JAVA_HOME
+
   - # do stuff with open OpenJDK 11
   - ./gradlew sonarqube
