@@ -24,4 +24,5 @@ fptHlhjCuy/0dgkXLTsZ/u07AEjuvp7Bz5vcUqzFQqePreqDf9rI7H/PcfqIPb4I=" # encrypted v
 
 
 script:
+  - ./gradlew
   - ./run_calabash.sh
