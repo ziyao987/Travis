@@ -26,6 +26,8 @@ before_install:
 
 install:
   - gem update --system
+  - yes | gem uninstall calabash-android
+  - yes | gem uninstall json
   - gem install bundler
   - bundle install
 
